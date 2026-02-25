@@ -1,0 +1,8 @@
+{
+  "chirp_type": 1,
+  "cycles": 16,
+  "f_start": 1.4,
+  "f_end": 20,
+  "amp_max": 100,
+  "hann_alpha": 0.5
+}
