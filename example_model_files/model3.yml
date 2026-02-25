@@ -305,10 +305,25 @@ expoData:
   name: Arm
 curves:
   0:
-    type: 0
+    type: 1
     smooth: 1
-    points: 17
-    name: seg1
+    points: 12
+    name: s1
+  1:
+    type: 1
+    smooth: 1
+    points: 12
+    name: s2
+  2:
+    type: 1
+    smooth: 1
+    points: 12
+    name: s3
+  3:
+    type: 1
+    smooth: 1
+    points: 12
+    name: s4
 points:
   0:
     val: 0
@@ -345,35 +360,227 @@ points:
   16:
     val: 0
   17:
-    val: -66
+    val: -74
   18:
-    val: -45
+    val: -53
   19:
-    val: -28
+    val: -34
   20:
-    val: -13
+    val: -17
   21:
-    val: 0
+    val: -3
   22:
-    val: 12
+    val: 11
   23:
     val: 23
   24:
     val: 34
   25:
-    val: 43
+    val: 44
   26:
-    val: 52
+    val: 54
   27:
-    val: 61
+    val: 62
   28:
-    val: 70
+    val: 71
   29:
-    val: 78
+    val: 79
   30:
-    val: 85
+    val: 86
   31:
     val: 93
+  32:
+    val: 0
+  33:
+    val: 100
+  34:
+    val: 0
+  35:
+    val: -100
+  36:
+    val: 0
+  37:
+    val: 100
+  38:
+    val: 0
+  39:
+    val: -100
+  40:
+    val: 0
+  41:
+    val: 100
+  42:
+    val: 0
+  43:
+    val: -100
+  44:
+    val: 0
+  45:
+    val: 100
+  46:
+    val: 0
+  47:
+    val: -100
+  48:
+    val: 0
+  49:
+    val: -84
+  50:
+    val: -68
+  51:
+    val: -53
+  52:
+    val: -38
+  53:
+    val: -24
+  54:
+    val: -11
+  55:
+    val: 2
+  56:
+    val: 14
+  57:
+    val: 26
+  58:
+    val: 38
+  59:
+    val: 49
+  60:
+    val: 60
+  61:
+    val: 70
+  62:
+    val: 80
+  63:
+    val: 90
+  64:
+    val: 0
+  65:
+    val: 100
+  66:
+    val: 0
+  67:
+    val: -100
+  68:
+    val: 0
+  69:
+    val: 100
+  70:
+    val: 0
+  71:
+    val: -100
+  72:
+    val: 0
+  73:
+    val: 100
+  74:
+    val: 0
+  75:
+    val: -100
+  76:
+    val: 0
+  77:
+    val: 100
+  78:
+    val: 0
+  79:
+    val: -100
+  80:
+    val: 0
+  81:
+    val: -85
+  82:
+    val: -71
+  83:
+    val: -57
+  84:
+    val: -43
+  85:
+    val: -29
+  86:
+    val: -16
+  87:
+    val: -4
+  88:
+    val: 9
+  89:
+    val: 21
+  90:
+    val: 33
+  91:
+    val: 45
+  92:
+    val: 56
+  93:
+    val: 68
+  94:
+    val: 79
+  95:
+    val: 89
+  96:
+    val: 0
+  97:
+    val: 100
+  98:
+    val: 0
+  99:
+    val: -100
+  100:
+    val: 0
+  101:
+    val: 100
+  102:
+    val: 0
+  103:
+    val: -100
+  104:
+    val: 0
+  105:
+    val: 100
+  106:
+    val: 0
+  107:
+    val: -100
+  108:
+    val: 0
+  109:
+    val: 100
+  110:
+    val: 0
+  111:
+    val: -100
+  112:
+    val: 0
+  113:
+    val: -86
+  114:
+    val: -72
+  115:
+    val: -58
+  116:
+    val: -45
+  117:
+    val: -32
+  118:
+    val: -19
+  119:
+    val: -6
+  120:
+    val: 7
+  121:
+    val: 19
+  122:
+    val: 31
+  123:
+    val: 43
+  124:
+    val: 55
+  125:
+    val: 66
+  126:
+    val: 78
+  127:
+    val: 89
 logicalSw:
   0:
     func: FUNC_EDGE

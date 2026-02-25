@@ -322,7 +322,9 @@ def add_chirp_segments_to_model_yaml(
     """
     Append curves and points for all segments of the selected chirp
     into an EdgeTX model YAML file.
-    Each segment becomes one curve; its points go into the global `points` map.
+    Each segment becomes one curve (named s1, s2, s3, ...); its point data
+    goes into the global `points` map. Each curve stores 17 point values
+    but the YAML curve entry uses points: 12 per EdgeTX convention.
     """
     if yaml is None:
         raise RuntimeError("PyYAML is required for YAML editing. Please `pip install pyyaml`.")
@@ -394,12 +396,12 @@ def add_chirp_segments_to_model_yaml(
             scaled_x = np.zeros_like(t_seg)
         quantized_scaled_x = np.round(scaled_x).astype(int)
 
-        # Add curve entry
-        curve_name = f"chirp{chirp_type}_seg{seg_idx + 1}"
+        # Add curve entry: EdgeTX expects points: 12 in YAML even when 17 point values are stored
+        curve_name = f"s{seg_idx + 1}"
         curves[next_curve_idx] = {
             "type": 1,
             "smooth": 1,
-            "points": n_pt,
+            "points": 12,
             "name": curve_name,
         }
 

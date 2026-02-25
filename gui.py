@@ -131,9 +131,8 @@ def run_gui(config_path: str | None = None) -> None:
         if not model_path:
             return
         try:
-            # For this test, only add the first segment as a curve
-            add_chirp_segments_to_model_yaml(cfg_new, ct, model_path, max_segments=1)
-            messagebox.showinfo("Model updated", f"First segment added to {model_path}")
+            add_chirp_segments_to_model_yaml(cfg_new, ct, model_path)
+            messagebox.showinfo("Model updated", f"All segments added as curves s1, s2, s3... to {model_path}")
         except Exception as e:
             messagebox.showerror("Add curve error", str(e))
 
